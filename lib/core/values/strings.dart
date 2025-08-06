@@ -1,0 +1,16 @@
+const String createTeam= 'Create Team';
+const String teamname= 'Team name';
+const String typename= 'Type name';
+const String providename= 'Provide a name';
+const String addexistingusers= 'Add existing users';
+const String inviteNewUsers= 'Invite New Users:';
+const String email= 'Email';
+const String typeemailinvite= 'Type Email to invite';
+const String firstname= 'First name';
+const String lastname= 'Last name';
+const String addinvitee= 'Add Invitee';
+const String noexternalS1= 'No external users have been invited for this team.';
+const String rememberS1= 'Remember to click on the "Add invitee" button above for each new member you add.';
+const String cancel= 'Cancel';
+const String createNewTeam= 'Create New Team';
+const String create= 'Create';
