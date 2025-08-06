@@ -1,9 +1,7 @@
-import 'package:bndemo/core/utils/app_constants.dart';
 import 'package:bndemo/core/utils/routes/app_route.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'features/home/presentation/controller/team_controller.dart';
-import 'features/home/presentation/pages/dashboard.dart';
 
 void main() {
   runApp(const MyApp());
