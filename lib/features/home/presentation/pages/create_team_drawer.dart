@@ -19,7 +19,7 @@ class CreateTeamDrawer extends StatelessWidget {
     // final isTablet = ResponsiveUtils.isTablet(context);
     // final width = MediaQuery.of(context).size.width;
     // final drawerWidth =  width * 0.6;
-    final drawerWidth = 330.0;
+    const drawerWidth = 330.0;
 
     return Material(
       color: Colors.transparent,
@@ -28,6 +28,13 @@ class CreateTeamDrawer extends StatelessWidget {
         height: double.infinity,
         decoration: const BoxDecoration(
           color: Colors.white,
+          boxShadow: [
+            BoxShadow(
+              offset: Offset(0, 5),
+              blurRadius: 30,
+              color: Color(0x19000000),
+            )
+          ],
           borderRadius: BorderRadius.only(
             topLeft: Radius.circular(16),
             bottomLeft: Radius.circular(16),
@@ -47,8 +54,7 @@ class CreateTeamDrawer extends StatelessWidget {
                   ),
                   onPressed: onClose,
                 ),
-                const Text(createTeam,
-                    style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold)),
+                const Text(createTeam, style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold)),
               ],
             ),
             Expanded(
@@ -81,8 +87,7 @@ class CreateTeamDrawer extends StatelessWidget {
                       const SizedBox(height: 18),
                       _label(inviteNewUsers),
                       _label(email),
-                      CustomTextField(
-                          text: typeemailinvite, ctl: controller.emailController),
+                      CustomTextField(text: typeemailinvite, ctl: controller.emailController),
                       const SizedBox(height: 12),
                       _label(firstname),
                       CustomTextField(text: '', ctl: controller.firstNameController),

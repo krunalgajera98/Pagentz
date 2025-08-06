@@ -1,10 +1,12 @@
 import 'package:bndemo/features/home/domain/entities/team_model.dart';
 import 'package:bndemo/features/home/presentation/pages/dashboard.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class TeamController extends GetxController {
   RxString selectedString = 'Teams'.obs;
+  GlobalKey<ScaffoldState> drawerKey = GlobalKey();
   RxBool showCreateDrawer = false.obs;
   final TextEditingController teamNameController = TextEditingController();
   final TextEditingController existingUsersController = TextEditingController();
